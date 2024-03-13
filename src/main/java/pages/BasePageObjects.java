@@ -5,8 +5,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import static base.BrowserDriverFactory.getDriver;
-
 public class BasePageObjects extends BrowserDriverFactory {
 
     static WebDriverWait wait = new WebDriverWait(getDriver(), 10);
