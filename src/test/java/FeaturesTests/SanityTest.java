@@ -16,6 +16,5 @@ public class SanityTest extends BasePageObjects {
         click(featureLocators.arrowRightButton);
         click(featureLocators.arrowLeftButton);
         BrowserDriverFactory.closeBrowser();
-
     }
 }
