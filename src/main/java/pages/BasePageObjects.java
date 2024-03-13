@@ -1,4 +1,5 @@
 package pages;
+import base.BrowserDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -6,7 +7,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import static base.BrowserDriverFactory.getDriver;
 
-public class BasePageObjects {
+public class BasePageObjects extends BrowserDriverFactory {
 
     static WebDriverWait wait = new WebDriverWait(getDriver(), 10);
 
