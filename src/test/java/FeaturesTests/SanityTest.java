@@ -1,5 +1,4 @@
 package FeaturesTests;
-
 import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
@@ -10,8 +9,6 @@ import org.testng.annotations.Test;
 import pages.BasePageObjects;
 import pages.ConstantPage;
 import pages.TablePage;
-
-
 import static locators.FeatureLocators.customers;
 import static pages.ConstantPage.AlfredsCompany;
 import static pages.ConstantPage.CentroCompany;
@@ -23,8 +20,6 @@ SanityTest extends BasePageObjects {
     @Epic("Table Functionality Testing")
     @Feature("Table Values Check ")
     @Test(groups = {"sanity"})
-    @Story("open site with table to check")
-    @Description("Test Description: open table site and verify some parameters")
     public void openPageTableAndCheckGermanyCountry() {
         openUrl(constantPage.featureUrl);
         WebElement tableElement = driver.findElement(customers);
