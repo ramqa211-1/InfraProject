@@ -11,7 +11,7 @@ The framework is designed with Object-Oriented Programming principles to enhance
 - `FirstTaskTest.java` - contains tests related to the first task.
 - `SecondTaskTest.java` - contains tests for the second task.
 
-to generate a report after running a test open in cmd the project folder and enter this command:
+## To generate a report after running a test open in cmd the project folder and enter this command:
 
-allure serve
+**allure serve**s
 
