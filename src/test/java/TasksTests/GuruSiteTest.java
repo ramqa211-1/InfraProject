@@ -16,7 +16,7 @@ public class GuruSiteTest {
     @Feature("check sub menu drop down Values")
     @Description("check if a sub menu has relate text name like the main button from the main menu")
     @Test(groups = {"sanity"})
-    public void testMenuWithDropdown() {
+    public void menuDropdownTest() {
         openUrl(GuruSiteUrl);
         List<String> menuWithDropdown = getDropdownItemsContainingText("Selenium");
         if (!menuWithDropdown.isEmpty()) {
