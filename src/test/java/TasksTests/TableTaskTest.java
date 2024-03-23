@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.BasePageObjects;
-import pages.CompanyCountry;
+import pages.CompanyCountryEnum;
 import pages.ConstantPage;
 import pages.TablePage;
 
@@ -26,9 +26,9 @@ TableTaskTest extends BasePageObjects {
         openUrl(constantPage.TableSiteUrl);
         WebElement tableElement = driver.findElement(customers);
         TablePage tablePage = new TablePage();
-        for (CompanyCountry companyCountry : CompanyCountry.values()) {
-            String companyName = companyCountry.getCompanyName();
-            String expectedCountry = companyCountry.getCountry();
+        for (CompanyCountryEnum companyCountryEnum : CompanyCountryEnum.values()) {
+            String companyName = companyCountryEnum.getCompanyName();
+            String expectedCountry = companyCountryEnum.getCountry();
             String actualCountry = tablePage.getCountryForCompany(tableElement, companyName);
             if (actualCountry != null) {
                 System.out.println("Country name is : " + actualCountry);

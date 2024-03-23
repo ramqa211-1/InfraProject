@@ -2,7 +2,7 @@ package pages;
 
 import io.qameta.allure.Step;
 
-public enum CompanyCountry {
+public enum CompanyCountryEnum {
 
     ALFREDS_FUTTERKISTE("Alfreds Futterkiste", "Germany"),
     CENTRO_COMERCIAL_MOCTEZUMA("Centro comercial Moctezuma", "Mexico"),
@@ -14,7 +14,7 @@ public enum CompanyCountry {
     private final String companyName;
     private final String country;
 
-    CompanyCountry(String companyName, String country) {
+    CompanyCountryEnum(String companyName, String country) {
         this.companyName = companyName;
         this.country = country;
     }
