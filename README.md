@@ -13,5 +13,5 @@ The framework is designed with Object-Oriented Programming principles to enhance
 
 ## To generate a report after running a test open in cmd the project folder and enter this command:
 
-**allure serve**s
+**allure serve**
 
