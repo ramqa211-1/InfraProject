@@ -1,4 +1,16 @@
+Main points for this automation task:
 
-Wrote this home task using Java 17 and the TestNG framework. Tests will run on the Chrome browser.
+## Environment Setup
+- **Programming Language**: Java 17
+- **Automation Tool**: Selenium WebDriver
+- **Testing Framework**: TestNG
+- **Reporting Tool**: Allure Report
 
-Keep in mind, I was instructed that I need to write about some elements theoretically because they are not existing, so some tests will fail due to that.
+The framework is designed with Object-Oriented Programming principles to enhance maintainability and scalability. The project is structured into two main test classes, each corresponding to a specific task.
+
+- `FirstTaskTest.java` - contains tests related to the first task.
+- `SecondTaskTest.java` - contains tests for the second task.
+
+to generate a report after running a test open in cmd the project folder and enter this command:
+allure serve allure-results
+
