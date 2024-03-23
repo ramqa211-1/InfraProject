@@ -34,12 +34,12 @@ TableTaskTest extends BasePageObjects {
                 System.out.println("Country name is : " + actualCountry);
             } else {
                 System.out.println("Company not found.");
-                Assert.fail("Company not found for " + companyName);
                 continue;
             }
             boolean verificationResult = actualCountry.equals(expectedCountry);
             if (verificationResult) {
                 System.out.println("Verification Passed: The country of " + companyName + " is correctly listed as " + expectedCountry + ".");
+                Assert.assertTrue(verificationResult, "Verification Passed: The country of " + companyName + " is correctly listed as " + expectedCountry + ".");
             } else {
                 System.out.println("Verification Failed: The country of " + companyName + " is not listed as " + expectedCountry + ".");
                 Assert.fail("Verification Failed: The country of " + companyName + " is not listed as " + expectedCountry + ".");

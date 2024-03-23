@@ -4,9 +4,7 @@ import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import org.testng.annotations.Test;
-
 import java.util.List;
-
 import static base.BrowserDriverFactory.closeBrowser;
 import static pages.BasePageObjects.openUrl;
 import static pages.ConstantPage.GuruSiteUrl;
@@ -17,7 +15,7 @@ public class GuruSiteTest {
     @Epic("Guru99 Site Functionality Testing")
     @Feature("check sub menu drop down Values")
     @Description("check if a sub menu has relate text name like the main button from the main menu")
-    @Test
+    @Test(groups = {"sanity"})
     public void testMenuWithDropdown() {
         openUrl(GuruSiteUrl);
         List<String> menuWithDropdown = getDropdownItemsContainingText("Selenium");
