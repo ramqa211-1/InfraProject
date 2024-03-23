@@ -5,6 +5,7 @@ Main points for this automation task:
 - **Automation Tool**: Selenium WebDriver
 - **Testing Framework**: TestNG
 - **Reporting Tool**: Allure Report
+- **Maven**
 
 The framework is designed with Object-Oriented Programming principles to enhance maintainability and scalability. The project is structured into two main test classes, each corresponding to a specific task.
 
