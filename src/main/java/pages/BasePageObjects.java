@@ -34,18 +34,4 @@ public class BasePageObjects extends BrowserDriverFactory {
     public static void click(By locator) {
         find(locator).click();
     }
-
-    public static void typeText(By locator, String text) {
-        find(locator).sendKeys(text);
-    }
-
-    public static String getText(By locator) {
-        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-        if (element != null) {
-            return element.getText();
-        } else {
-            System.out.println("the element not visible on the page");
-            return "the element not visible on the page";
-        }
-    }
 }

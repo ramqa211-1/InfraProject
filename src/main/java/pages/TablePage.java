@@ -2,8 +2,8 @@ package pages;
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebElement;
 import java.util.List;
-import static locators.FeatureLocators.tableBody;
-import static locators.FeatureLocators.tableRaw;
+import static locators.TableSiteLocators.tableBody;
+import static locators.TableSiteLocators.tableRaw;
 
 public class TablePage extends BasePageObjects {
 
@@ -23,7 +23,6 @@ public class TablePage extends BasePageObjects {
         return null;
     }
 
-
     @Step("Verify Table Cell with Text")
     public boolean verifyTableCellText(WebElement table, int searchColumn, String searchText, int returnColumnText, String expectedText) {
         String actualText = getTableCellText(table, searchColumn, searchText, returnColumnText);
@@ -37,7 +36,6 @@ public class TablePage extends BasePageObjects {
     @Step("get country value with company name")
     public String getCountryForCompany(WebElement tableElement, String companyName) {
         List<WebElement> rows = tableElement.findElements(tableBody);
-
         for (WebElement row : rows) {
             List<WebElement> cells = row.findElements(tableRaw);
             if (!cells.isEmpty()) {

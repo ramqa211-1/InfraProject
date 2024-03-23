@@ -35,13 +35,6 @@
             <version>${webdrivermanager.version}</version>
         </dependency>
 
-        <!-- JSON -->
-        <dependency>
-            <groupId>org.json</groupId>
-            <artifactId>json</artifactId>
-            <version>20210307</version>
-        </dependency>
-
         <!-- SLF4J Simple Logger -->
         <dependency>
             <groupId>org.slf4j</groupId>

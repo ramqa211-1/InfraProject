@@ -1,5 +1,6 @@
 package base;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -17,6 +18,7 @@ public class BrowserDriverFactory {
         return driver;
     }
 
+    @Step ("close browser")
     public static void closeBrowser() {
         if (driver != null) {
             driver.quit();
