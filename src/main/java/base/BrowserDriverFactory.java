@@ -8,6 +8,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 public class BrowserDriverFactory {
     protected static WebDriver driver;
 
+    @Step ("create browser driver")
     public static WebDriver getDriver() {
         if (driver == null) {
             WebDriverManager.chromedriver().setup();

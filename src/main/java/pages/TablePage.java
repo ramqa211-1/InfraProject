@@ -19,7 +19,6 @@ public class TablePage extends BasePageObjects {
                 }
             }
         }
-
         return null;
     }
 
